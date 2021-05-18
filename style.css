@@ -1,0 +1,122 @@
+.nav-bar {
+    border : 1px;
+    border-style: solid;
+    border-color: blue;
+    display: flex
+
+}
+
+.list-div {
+    border : 1px;
+    border-style: solid;
+    border-color: red;
+}
+
+.input-box{
+    border : 1px;
+    border-style: solid;
+    display: inline-block;
+    height : 100%;
+    width: 100%;
+    border-color: yellow;
+    box-sizing: border-box;
+}
+
+.input-box-div {
+    display:inline-block;
+    width : 50%;
+    border : 1px;
+    border-style : solid;
+    border-color : violet;
+    box-sizing: border-box;
+
+}
+
+.main {
+    border : 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.button {
+    border : 1px;
+    border-style: solid;
+    border-color: green;
+    width: 50%
+}
+
+.add-button {
+    border : 1px;
+    border-style: solid;
+}
+
+.box {
+    border : 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.status-div-icon{
+    border: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+.status-div{
+    border: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    width: 10%
+}
+.task-div{
+    border: 1px;
+    border-style: solid;
+    height: 30px;
+    width: 70%;
+}
+
+#mi:hover{
+    cursor: pointer;
+}
+
+.remove-div{
+    border: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    height: 30px;
+    width: 10%;
+    padding: auto;
+    margin: auto;
+}
+
+.choice {
+    border: 1px;
+    border-style: solid;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.icon {
+    border: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    width: 30%
+}
+
+.drop-down-menu{
+    border: 1px;
+    border-style: solid;
+    width: 100%;
+}
+
+.status{
+    border: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    width: 70%
+}
+
+.status-p:hover, .status:hover{
+    cursor:pointer;
+}

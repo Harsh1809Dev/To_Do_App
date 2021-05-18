@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link href="style.css" rel="stylesheet">
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel = "stylesheet">
+</head>
+<body>
+<div>
+    <div class="main">
+        <div class="nav-bar">
+            <div class="input-box-div">
+                <input type="text" class="input-box">
+            </div> 
+            <div class="button">
+                <span class="material-icons-outlined">
+                    add_task
+                </span>
+            </div>
+        </div>
+        <div class="list-div">
+            <h3>List : </h3>
+            <ul class="list">
+            </ul>
+        </div>
+        <template id="list-template">
+            <div class="template">
+                <div class="box">
+                    <div class="status-div-icon">
+                        <span class="material-icons-outlined">
+                            pending_actions
+                        </span>
+                    </div>
+                    <div class="status-div" >
+                        <p class="status-p" onclick="show_menu()">Pending</p>
+                    </div>
+                    <div class="task-div">
+                    </div>
+                    <div class="remove-div">
+                        <span class="material-icons-outlined" id="mi" onclick = "show_menu()">
+                            remove_circle
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <template id="drop-down-menu-temp">
+            <div class= "drop-down-menu">
+                <div class="choice" onclick= change_status()>
+                    <div class="status">
+                        <p >Pending</p>
+                    </div>
+                    <div class="icon">
+                        <span class="material-icons-outlined">
+                            pending_actions
+                            </span>
+                    </div>
+                </div>
+                <div class="choice" onclick= change_status()>
+                    <div class="status">
+                        <p>On Going</p>
+                    </div>
+                    <div class="icon">
+                        <span class="material-icons-outlined">
+                            schedule
+                        </span>
+                    </div>
+                </div>
+                <div class="choice" onclick= change_status()>
+                    <div class="status" >
+                        <p>Completed</p>
+                    </div>
+                    <div class="icon">
+                        <span class="material-icons-outlined">
+                            task
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+    <script>
+        var uid = new ShortUniqueId();
+    </script>
+    <script src="script.js"></script>
+</div>         
+</body>
+</html>
